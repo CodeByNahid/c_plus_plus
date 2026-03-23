@@ -1,0 +1,25 @@
+//Problem Link: https://codeforces.com/contest/265/problem/A
+//@CodeByNahid
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve(){
+     string s1,s2; cin>>s1>>s2;
+     int i=0;
+    for(char rule :s2){
+        if(rule== s1[i]){
+            i++;
+        }
+    }
+ 
+    cout<< i+1<<endl; return;
+}
+
+int main() {
+   ios::sync_with_stdio(false);
+   cin.tie(nullptr);
+   int t=1; while (t--) {
+        solve();
+    }
+return 0;
+}
