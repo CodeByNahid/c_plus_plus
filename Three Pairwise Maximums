@@ -1,0 +1,25 @@
+//Problem Link: https://codeforces.com/contest/1385/problem/A
+//@CodeByNahid
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve(){int x[3];
+        for (int i = 0; i < 3; ++i)
+            std::cin >> x[i];
+        std::sort(x, x + 3);
+        if (x[1] != x[2]) {
+            std::cout << "NO\n";
+        } else {
+            std::cout << "YES\n";
+            std::cout << x[0] << " " << x[0] << " " << x[1] << "\n";
+        }
+}
+
+int main() {
+   ios::sync_with_stdio(false);
+   cin.tie(nullptr);
+   int t; cin>>t; while (t--) {
+        solve();
+    }
+return 0;
+}
