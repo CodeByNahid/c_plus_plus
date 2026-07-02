@@ -1,0 +1,33 @@
+//Problem Link: https://codeforces.com/contest/227/problem/B
+//@CodeByNahid
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+void solve(){
+    ll n; cin>>n;
+    map<ll,ll>mp;
+    ll i=1,x;
+   for(ll j=0;j<n;j++){
+        cin>>x;
+        mp[x]=i++;
+    }
+    ll vfirst=0,pend=0;
+    ll m; cin>>m;
+    while(m--){
+        cin>>x;
+        vfirst+=mp[x];
+        pend+=n-mp[x]+1;
+    }
+    cout<<vfirst<<" "<<pend<<endl;
+    
+    
+}
+
+int main() {
+   ios::sync_with_stdio(false);
+   cin.tie(nullptr);
+   int t=1; while (t--) {
+        solve();
+    }
+return 0;
+}
